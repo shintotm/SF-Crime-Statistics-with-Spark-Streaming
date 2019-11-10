@@ -11,4 +11,5 @@ You may choose to create your project in the workspace we provide here, or if yo
 * Python 3.6.x or 3.7.x
 
 ### Streaming data output through consumer
+`python consumer_server.py`
 ![](consumer_log.png)
