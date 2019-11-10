@@ -9,3 +9,6 @@ You may choose to create your project in the workspace we provide here, or if yo
 * Java 1.8.x
 * Kafka build with Scala 2.11.x
 * Python 3.6.x or 3.7.x
+
+### Streaming data output through consumer
+![](consumer_log.png)
