@@ -81,6 +81,7 @@ def run_spark_job(spark):
 
     # apply aggregations using windows function to see how many calls occurred in 2 day span
     calls_per_2_days = converted_df \
+        .withWatermark("call_datetime", "2 day") \
         .groupBy(
         psf.window(converted_df.call_date_time, "2 day")
     ).agg(psf.count("crime_id").alias("calls_per_2_day")).select("calls_per_2_day")
